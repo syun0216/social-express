@@ -4,14 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "cross-env NODE_ENV=development nodemon --harmony index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.4",
-    "express": "^4.17.1"
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1",
+    "md5": "^2.2.1",
+    "sequelize": "^6.3.3",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.10.5",
+    "@babel/register": "^7.10.5",
+    "nodemon": "^2.0.4"
   }
 }
